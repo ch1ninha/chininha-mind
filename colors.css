@@ -81,17 +81,17 @@ div#projeto-item a{
 }
 
 
-.dark{
-  background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+.brasil{
+  background: linear-gradient(236.85deg, #33ff00 27.26%, #ffee00 96.03%);
 }
-.dark .container{
+.brasil .container{
   background: #333439;
   color:white;
 }
-.dark .projetos{
+.brasil .projetos{
   background: #1c1c1c;
 }
-.dark #projeto-item a{
+.brasil #projeto-item a{
   color: white;
 }
 
