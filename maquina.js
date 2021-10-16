@@ -1,6 +1,6 @@
-function temaEscuro(){
-    document.body.classList.toggle("dark")
-    var elementoDark = document.getElementById("btn-tema-escuro")
+function temaBrasil(){
+    document.body.classList.toggle("brasil")
+    var elementoDark = document.getElementById("btn-tema-brasil")
     
   }
   
