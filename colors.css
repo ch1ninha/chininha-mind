@@ -21,14 +21,19 @@ body{
 }
 .perfil{
   display:flex;
+  background: linear-gradient(150deg, rgba(63, 28, 219, 0.3) 10.49%, rgb(216, 232, 252,0.4) 90.19%);
+  border-radius: 9px;
+  background: 0.5;
 }
 .foto-perfil{
+  margin: 12px;
   border-radius:360px;
   max-height:200px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.30);
 }
 .info-perfil{
   margin-left:20px;
+  margin-right: 20px;
 }
 .info-perfil h1{
   font-weight: 700;
