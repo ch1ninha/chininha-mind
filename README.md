@@ -4,9 +4,13 @@ Utilizando como base o portfolio estudado durante a ImersaoDev da Alura, fazendo
 
 Começando a construção de um portfolio, buscando:
 
-- Aprimorar tema escuro
-- Aprimorar tema atual
-- ~~Criação de um tema espaço~~
+- ~~Aprimorar tema escuro~~ (_Virou o Tema Brasil)_ 
+- Aprimorar Tema Padrão
+  - Criar área com as informações do perfil
+- Criação Tema Brasil
+  - Atualização do tema.
+- ~~Criação de um Tema Espaço~~
+  - Atualização do tema
 - Adicionar novos projetos
   - Gerador de Campeonato
   - X * Y = K
