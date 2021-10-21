@@ -10,12 +10,10 @@ function temaBrasil(){
 
   var jogadores = [0];
   var timeJoga = [0];
-
   function adicionarJogadores(){
-    var num_jogadores = document.getElementById("numero-jogadores").value;
+    num_jogadores = document.getElementById("numero-jogadores").value;
     var elementoSorteio = document.getElementById("sorteio-botao");
     elementoSorteio.innerHTML += "<div class='sorteio-inserir' id='sorteio-inserir'>"
-    elementoSorteio.innerHTML += "<p>"+num_jogadores+"</p>"
     elementoSorteio.innerHTML += "</div>"
     elementoSorteio.innerHTML += "<div class='adicionar-nome' id='adicionar-nome'></div>"
 
@@ -31,16 +29,57 @@ function temaBrasil(){
     var elementoInserir = document.getElementById("adicionar-nome");
     elementoInserir.innerHTML += "<p>Nome dos Treinadores</p>"
     for(var y in jogadores){
-      elementoInserir.innerHTML += "<p>Jogador "+y+" </p>"
+      elementoInserir.innerHTML += "-----------------------------------------------"
+      elementoInserir.innerHTML += "<h4>Jogador "+y+" </h4>"
+      elementoInserir.innerHTML += "<p>Nome do Jogador/Treinador:</p>"
       elementoInserir.innerHTML += "<input type='text' id='nome-jogador-"+y+"'><br>"
+      elementoInserir.innerHTML += "<p>Nome do Time:</p>"
+      elementoInserir.innerHTML += "<input type='text' id='nome-time-"+y+"'><br>"
+
     }
-    
+    elementoInserir.innerHTML += "-----------------------------------------------";
     elementoInserir.innerHTML += "<br><button onClick='criarNome()'>Adicionar Nomes</button>";
     
     // ver sobre o .inenrHTML e outerHTML
+    criarNome(num_jogadores)
   }
 
+  function criarNome(){
+    function Jogador(id_jogador,nome_jogador,time_jogador){
+      this.id_jogador = id_jogador;
+      this.nome_jogador = nome_jogador;
+      this.time_jogador = time_jogador;
+    }
+    //teste maroto
+    var lista_id_jogador = []
+    var lista_nome_jogador = []
+    var lista_nome_time = []
+    for (var i = 0;num_jogadores>i;i++){
+      var idJogador = i
+      lista_id_jogador.push(idJogador);
+      var nomeJogador = "nome-jogador-"+i
+      var nome_jogador = document.getElementById(nomeJogador).value;
+      lista_nome_jogador.push(nome_jogador)
+      var nomeTime = "nome-time-"+i
+      var nome_time = document.getElementById(nomeTime).value;
+      lista_nome_time.push(nome_time);
+    }
+    console.log(lista_id_jogador);
+    console.log(lista_nome_jogador)
+    console.log(lista_nome_time);
+    /*for (var i = 0; i<num_jogadores ; i++){
+      console.log(i);
 
+    var jogador1 = new Jogador(1,"Lucas","City");
+    var jogador2 = new Jogador(2,"Gabriel","Giants");
+    var jogador3 = new Jogador(3,"Schneider","Inter");
+    var lista_jogadores = [jogador1,jogador2,jogador3];
+    */
+    for(var i = 0;lista_id_jogador.length>i;i++){
+      console.log(i)
+      //console.log("Jogador da ID "+lista_jogadores[i].id_jogador+", Nome: "+lista_jogadores[i].nome_jogador+" Time: "+lista_jogadores[i].time_jogador);
+    }
+  }
 
 
   function criarArray(nJogadores){
