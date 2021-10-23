@@ -41,7 +41,7 @@ function temaBrasil(){
     elementoInserir.innerHTML += "<br><button onClick='criarNome()'>Adicionar Nomes</button>";
     
     // ver sobre o .inenrHTML e outerHTML
-    criarNome(num_jogadores)
+    //criarNome(num_jogadores)
   }
 
   function criarNome(){
@@ -64,10 +64,20 @@ function temaBrasil(){
       var nome_time = document.getElementById(nomeTime).value;
       lista_nome_time.push(nome_time);
     }
+    
+    function criarVar(){
+      var listaVazia = {};
+      for(var i = 0;i<lista_id_jogador.length;i++){
+        listaVazia[i] = new Jogador(lista_id_jogador[i],lista_nome_jogador[i],lista_nome_time[i])
+      }
+      console.log(listaVazia)
+    }
+    criarVar();
+    /*
     console.log(lista_id_jogador);
     console.log(lista_nome_jogador)
     console.log(lista_nome_time);
-    /*for (var i = 0; i<num_jogadores ; i++){
+    for (var i = 0; i<num_jogadores ; i++){
       console.log(i);
 
     var jogador1 = new Jogador(1,"Lucas","City");
@@ -80,17 +90,6 @@ function temaBrasil(){
       //console.log("Jogador da ID "+lista_jogadores[i].id_jogador+", Nome: "+lista_jogadores[i].nome_jogador+" Time: "+lista_jogadores[i].time_jogador);
     }
   }
-
-
-  function criarArray(nJogadores){
-    var jogadores = [0];
-    for(var i = 0;i<nJogadores;i++){
-      jogadores.push("Jogador ");
-    }
-    jogadores.shift()
-    return jogadores
-  }
-
 
   function consoleFun(num_jogadores){
     console.log("CONSOLEFUN->Numero de jogadores: "+num_jogadores)
