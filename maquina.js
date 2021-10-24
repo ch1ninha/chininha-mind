@@ -66,28 +66,21 @@ function temaBrasil(){
     }
     
     function criarVar(){
-      var listaVazia = {};
+      listaVazia = {};
       for(var i = 0;i<lista_id_jogador.length;i++){
         listaVazia[i] = new Jogador(lista_id_jogador[i],lista_nome_jogador[i],lista_nome_time[i])
       }
       console.log(listaVazia)
+      return listaVazia
     }
     criarVar();
-    /*
-    console.log(lista_id_jogador);
-    console.log(lista_nome_jogador)
-    console.log(lista_nome_time);
-    for (var i = 0; i<num_jogadores ; i++){
-      console.log(i);
-
-    var jogador1 = new Jogador(1,"Lucas","City");
-    var jogador2 = new Jogador(2,"Gabriel","Giants");
-    var jogador3 = new Jogador(3,"Schneider","Inter");
-    var lista_jogadores = [jogador1,jogador2,jogador3];
-    */
+    
     for(var i = 0;lista_id_jogador.length>i;i++){
-      console.log(i)
-      //console.log("Jogador da ID "+lista_jogadores[i].id_jogador+", Nome: "+lista_jogadores[i].nome_jogador+" Time: "+lista_jogadores[i].time_jogador);
+      for(var j = 0;lista_id_jogador.length>i;i++){
+        if(listaVazia[i].id_jogador != listaVazia[j].id_jogador){
+          console.log("Jogo "+i+" | "+listaVazia[i].time_jogador+" x "+listaVazia[j].time_jogador);
+        }
+      }
     }
   }
 
