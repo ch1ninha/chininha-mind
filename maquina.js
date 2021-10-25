@@ -45,12 +45,22 @@ function temaBrasil(){
   }
 
   function criarNome(){
+    // criando funcao para criar classe dos jogadores
     function Jogador(id_jogador,nome_jogador,time_jogador){
       this.id_jogador = id_jogador;
       this.nome_jogador = nome_jogador;
       this.time_jogador = time_jogador;
+      // criar lugar para pontuação
+      pontuacao = {
+        vitorias = 0,
+        derrotas = 0,
+        empates = 0,
+        pontos = 0,
+        golsFeitos = 0,
+        golsSofridos = 0
+      }
     }
-    //teste maroto
+    //criando listas para pegar elementos dos treinados/times
     var lista_id_jogador = []
     var lista_nome_jogador = []
     var lista_nome_time = []
@@ -64,19 +74,19 @@ function temaBrasil(){
       var nome_time = document.getElementById(nomeTime).value;
       lista_nome_time.push(nome_time);
     }
-    
+
+    // funcao para instanciar classe e criar objeto dos jogadores
     function criarVar(){
-      listaVazia = {};
+      listaVazia = [];
       for(var i = 0;i<lista_id_jogador.length;i++){
         listaVazia[i] = new Jogador(lista_id_jogador[i],lista_nome_jogador[i],lista_nome_time[i])
       }
-      console.log(listaVazia)
       return listaVazia
     }
     criarVar();
     
     for(var i = 0;lista_id_jogador.length>i;i++){
-      for(var j = 0;lista_id_jogador.length>i;i++){
+      for(var j = 0;lista_id_jogador.length>j;j++){
         if(listaVazia[i].id_jogador != listaVazia[j].id_jogador){
           console.log("Jogo "+i+" | "+listaVazia[i].time_jogador+" x "+listaVazia[j].time_jogador);
         }
