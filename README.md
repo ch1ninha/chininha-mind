@@ -15,3 +15,6 @@ Começando a construção de um portfolio, buscando:
   - Gerador de Campeonato
   - X * Y = K
   - 3x + 1
+
+
+- web3, criar um perfil que é possivel criar um token, esse token é um ativo seu, você consegue ter funções em seu site que somente pessoas com certa quantidade de tokens consegue acessar
