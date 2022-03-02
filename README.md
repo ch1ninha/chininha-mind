@@ -18,3 +18,4 @@ Começando a construção de um portfolio, buscando:
 
 
 - web3, criar um perfil que é possivel criar um token, esse token é um ativo seu, você consegue ter funções em seu site que somente pessoas com certa quantidade de tokens consegue acessar
+- Temos um enorme numero de jogos, uma "descentralização" deles, porem não vemos tanto isso com as redes sociais, descentralizar sua informação pessoal para ser como um game, utilizar em diversas redes tendo controle sobre sua propria informação/dados.
